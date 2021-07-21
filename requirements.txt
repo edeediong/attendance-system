@@ -2,3 +2,4 @@ asgiref
 Django
 pytz
 sqlparse
+gunicorn

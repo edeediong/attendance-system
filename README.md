@@ -29,7 +29,7 @@ Example usernames:
 student- 'edidiong'
 teacher- 'trisila'
 
-You can access the django admin page at **http://127.0.0.1:8000/admin** and login with username 'admin' and the above password.
+You can access the django admin page at **http://127.0.0.1:8000/admin** and login with username 'edeediong' and the above password.
 
 Also a new admin user can be created using
 
@@ -45,7 +45,7 @@ The admin page is used to modify all tables such as Students, Teachers, Departme
 
 **For more details regarding the system and features please refer the reports included.**
 
-## Update (29/11/2020)
+## Update (29/06/2021)
 
 Added method to reset attendance time range in Django Admin page.
 
