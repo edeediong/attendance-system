@@ -252,7 +252,27 @@ def free_teachers(request, asst_id):
             ft_list.append(t)
 
     return render(request, 'info/free_teachers.html', {'ft_list': ft_list})
+#student location
+@login_required()
+def student_location(request):
+    #Get location data
+    ip = requests.get('https://api.ipify.org?format=json')
+    ip_data = json.loads(ip.text)
+    res = requests.get('http://ip-api.com/json/' + ip_data["ip"])
+    location_data_one = res.text
+    location_data = json.loads(location_data_one)
+    return render(request, 'index.html', {'data': location_data})
 
+#Teacher location view
+@login_required()
+def teacher_location(request):
+    #Get location data
+    ip = requests.get('https://api.ipify.org?format=json')
+    ip_data = json.loads(ip.text)
+    res = requests.get('http://ip-api.com/json/' + ip_data["ip"])
+    location_data_one = res.text
+    location_data = json.loads(location_data_one)
+    return render(request, 'index.html', {'data': location_data})
 
 # student marks
 
